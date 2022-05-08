@@ -231,8 +231,18 @@ with colb:
 
 with colc:
     st.write("")
+image2 = Image.open('pics/bricks.jpg')
+st.image(image2, use_column_width=True)
+cola, colb, colc = st.columns([1,6,1])
 
+with cola:
+    st.write("")
 
+with colb:
+    st.image("pics/dots.png")
+
+with colc:
+    st.write("")
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------
 #CHARTS: USING YAHOO FINANCE API TO CREATE 2 MAJOR INDEX CHARTS FOR LAST 5 YEARS
@@ -240,8 +250,7 @@ with colc:
 st.write("""
 # Charts
 """)
-image2 = Image.open('pics/bricks.jpg')
-st.image(image2, use_column_width=True)
+
 #-----------------------------------------------------------------------------------------------------------------------------------------------------NIFTY 50
 ticker0 = ('^NSEI')
 start0 = pd.to_datetime('2022-01-01')

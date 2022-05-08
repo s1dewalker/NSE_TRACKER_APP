@@ -484,6 +484,7 @@ with colc:
 #-----------------------------------------------------------------------------------------------------------------------------------------------------
                                                                #ADDING LINKS
 #-----------------------------------------------------------------------------------------------------------------------------------------------------
+st.write("")
 gif_html1 = get_img_with_href('pics/github-32.png', 'https://github.com/s1dewalker/NSE_Tracker_App')
 gif_html2 = get_img_with_href('pics/linkedin-32.png', 'http://www.linkedin.com/in/sujay-bhaumik-d12')
 gif_html3 = get_img_with_href('pics/gmail-32.png', 'mailto:sujaybhk99@gmail.com')

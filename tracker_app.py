@@ -240,7 +240,7 @@ with colc:
 st.write("""
 # Charts
 """)
-image2 = Image.open('pics/changes.png')
+image2 = Image.open('pics/bricks.jpg')
 st.image(image2, use_column_width=True)
 #-----------------------------------------------------------------------------------------------------------------------------------------------------NIFTY 50
 ticker0 = ('^NSEI')

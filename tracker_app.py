@@ -240,7 +240,8 @@ with colc:
 st.write("""
 # Charts
 """)
-
+image2 = Image.open('pics/changes.png')
+st.image(image2, use_column_width=True)
 #-----------------------------------------------------------------------------------------------------------------------------------------------------NIFTY 50
 ticker0 = ('^NSEI')
 start0 = pd.to_datetime('2022-01-01')

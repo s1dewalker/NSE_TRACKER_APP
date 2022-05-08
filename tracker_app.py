@@ -501,4 +501,17 @@ gif_html2 = get_img_with_href('pics/linkedin-32.png', 'http://www.linkedin.com/i
 gif_html3 = get_img_with_href('pics/gmail-32.png', 'mailto:sujaybhk99@gmail.com')
 gif_html4 = get_img_with_href('pics/tableau-32.png', 'https://public.tableau.com/app/profile/sujay.bahumik#!/?newProfile=&activeTab=0')
 
-st.markdown("""gif_html1,gif_html2,gif_html3,gif_html4""", unsafe_allow_html=True)
+cola, colb, colc, cold, cole, colf = st.columns([6,1,1,1,1,6])
+
+with cola:
+    st.write("")
+with colb:
+    st.markdown(gif_html1, unsafe_allow_html=True)
+with colc:
+    st.markdown(gif_html2, unsafe_allow_html=True)
+with cold:
+    st.markdown(gif_html3, unsafe_allow_html=True)
+with cole:
+    st.markdown(gif_html4, unsafe_allow_html=True)   
+with colf:
+    st.write("")

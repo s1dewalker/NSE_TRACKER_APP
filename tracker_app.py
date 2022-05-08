@@ -184,7 +184,8 @@ with col1:
     st.write("""
     > Companies that are __leaders__ in their respective sectors with no or very few competitors. Companies that provide __essential/necessary__ products and services.
     "Monopoly is the condition of every successful business" - Peter Thiel
-    (with GOOGLE FINANCE API in Sheets)""")
+    """)
+    
 
 with col2:
     gif_html = get_img_with_href('pics/hdy.png', 'https://docs.google.com/spreadsheets/d/12c9C5D5PXhEV6yxhYwkwMu7-h_B9q5-lpKKP_Rb4htU/edit?usp=sharing')
@@ -200,6 +201,7 @@ with col3:
     > Stocks that have __high ROA, low debt__ and __good EPS.__
     "Price is what you pay. Value is what you get" - Ben Graham
     """)
+st.write("""(with GOOGLE FINANCE API in Sheets)""")
 #-----------------------------------------------------------------------------------------------------------------------------------------------------
                                                                #SECTION BREAK USING IMAGES
 #-----------------------------------------------------------------------------------------------------------------------------------------------------

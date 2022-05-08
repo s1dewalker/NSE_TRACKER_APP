@@ -256,7 +256,7 @@ last_element = index1_list[-1]
 first_element = index1_list[0]
 pchg=round(((last_element-first_element)/first_element)*100,2)
 
-st.markdown('**NIFTY 50** has since changed by: <span class="font2">{}%</span>'.format(pchg), unsafe_allow_html=True)
+st.markdown('**NIFTY 50** has since changed by <span class="font2">{}%</span>'.format(pchg), unsafe_allow_html=True)
 
 
 #st.write(index1_list)
@@ -307,7 +307,7 @@ last_element = index1_list[-1]
 first_element = index1_list[0]
 pchg=round(((last_element-first_element)/first_element)*100,2)
 
-st.markdown('**NIFTY BANK** has since changed by: <span class="font2">{}%</span>'.format(pchg), unsafe_allow_html=True)
+st.markdown('**NIFTY BANK** has since changed by <span class="font2">{}%</span>'.format(pchg), unsafe_allow_html=True)
 
 
 #st.write(index1_list)

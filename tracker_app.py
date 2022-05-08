@@ -183,6 +183,7 @@ with col1:
     st.markdown(gif_html, unsafe_allow_html=True)
     st.write("""
     > Companies that are __leaders__ in their respective sectors with no or very few competitors. Companies that provide __essential/necessary__ products and services.
+    TOO BIG TO FAIL \n
     "Monopoly is the condition of every successful business" - Peter Thiel
     """)
     

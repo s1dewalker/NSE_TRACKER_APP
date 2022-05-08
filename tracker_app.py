@@ -197,6 +197,7 @@ with col3:
     st.markdown(gif_html, unsafe_allow_html=True)
     st.write("""
     > Stocks that have __high ROA, low debt__ and __good EPS.__
+    "Price is what you pay. Value is what you get" - Ben Graham
     """)
 #-----------------------------------------------------------------------------------------------------------------------------------------------------
                                                                #SECTION BREAK USING IMAGES

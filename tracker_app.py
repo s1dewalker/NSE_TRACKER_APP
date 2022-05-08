@@ -25,7 +25,7 @@ do_stuff_on_page_load()
 #-----------------------------------------------------------------------------------------------------------------------------------------------------
 #ADDING MAIN (TITLE) IMAGE
 #-----------------------------------------------------------------------------------------------------------------------------------------------------
-image = Image.open('pics\\Project3.jpg')
+image = Image.open('pics/Project3.jpg')
 
 st.image(image, use_column_width=True)
 
@@ -145,7 +145,7 @@ with cola:
     st.write("")
 
 with colb:
-    st.image("pics\dots.png")
+    st.image("pics/dots.png")
 
 with colc:
     st.write("")
@@ -179,21 +179,21 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
     #st.header("A cat")
-    gif_html = get_img_with_href('pics\mne4.png', 'https://docs.google.com/spreadsheets/d/1MlSYpuwSn4mjwXLSpPyGgWRFHD1bWp1KhcvBKkS2ZL8/edit?usp=sharing')
+    gif_html = get_img_with_href('pics/mne4.png', 'https://docs.google.com/spreadsheets/d/1MlSYpuwSn4mjwXLSpPyGgWRFHD1bWp1KhcvBKkS2ZL8/edit?usp=sharing')
     st.markdown(gif_html, unsafe_allow_html=True)
     st.write("""
     > Companies that are __leaders__ in their respective sectors with no or very few competitors. Companies that provide __essential/necessary__ products and services.
     (with GOOGLE FINANCE API in Sheets)""")
 
 with col2:
-    gif_html = get_img_with_href('pics\hdy.png', 'https://docs.google.com/spreadsheets/d/12c9C5D5PXhEV6yxhYwkwMu7-h_B9q5-lpKKP_Rb4htU/edit?usp=sharing')
+    gif_html = get_img_with_href('pics/hdy.png', 'https://docs.google.com/spreadsheets/d/12c9C5D5PXhEV6yxhYwkwMu7-h_B9q5-lpKKP_Rb4htU/edit?usp=sharing')
     st.markdown(gif_html, unsafe_allow_html=True)
     st.write("""
     > Stocks that have been __consistently__ paying out dividend.
     """)
 
 with col3:
-    gif_html = get_img_with_href('pics\vs.png', 'https://docs.google.com/spreadsheets/d/1Gb-1oktSWFO3j89dE2JD0OrNyecNonicAqzgTt2WZTA/edit?usp=sharing')
+    gif_html = get_img_with_href('pics/vs.png', 'https://docs.google.com/spreadsheets/d/1Gb-1oktSWFO3j89dE2JD0OrNyecNonicAqzgTt2WZTA/edit?usp=sharing')
     st.markdown(gif_html, unsafe_allow_html=True)
     st.write("""
     > Stocks that have __high ROA, low debt__ and __good EPS.__
@@ -222,7 +222,7 @@ with cola:
     st.write("")
 
 with colb:
-    st.image("pics\dots.png")
+    st.image("pics/dots.png")
 
 with colc:
     st.write("")
@@ -349,7 +349,7 @@ with cola:
     st.write("")
 
 with colb:
-    st.image("pics\dots.png")
+    st.image("pics/dots.png")
 
 with colc:
     st.write("")
@@ -461,7 +461,7 @@ with cola:
     st.write("")
 
 with colb:
-    st.image("pics\dots.png")
+    st.image("pics/dots.png")
 
 with colc:
     st.write("")
@@ -469,14 +469,14 @@ with colc:
 #-----------------------------------------------------------------------------------------------------------------------------------------------------
                                                                #ADDING LINKS
 #-----------------------------------------------------------------------------------------------------------------------------------------------------
-gif_html = get_img_with_href('pics\github-32.png', 'https://github.com/s1dewalker/NSE_TRACKER')
+gif_html = get_img_with_href('pics/github-32.png', 'https://github.com/s1dewalker/NSE_TRACKER')
 st.markdown(gif_html, unsafe_allow_html=True)
 st.markdown("")
-gif_html = get_img_with_href('pics\linkedin-32.png', 'http://www.linkedin.com/in/sujay-bhaumik-d12')
+gif_html = get_img_with_href('pics/linkedin-32.png', 'http://www.linkedin.com/in/sujay-bhaumik-d12')
 st.markdown(gif_html, unsafe_allow_html=True)
 st.markdown("")
-gif_html = get_img_with_href('pics\gmail-32.png', 'mailto:sujaybhk99@gmail.com')
+gif_html = get_img_with_href('pics/gmail-32.png', 'mailto:sujaybhk99@gmail.com')
 st.markdown(gif_html, unsafe_allow_html=True)
 st.markdown("")
-gif_html = get_img_with_href('pics\tableau-32.png', 'https://public.tableau.com/app/profile/sujay.bahumik#!/?newProfile=&activeTab=0')
+gif_html = get_img_with_href('pics/tableau-32.png', 'https://public.tableau.com/app/profile/sujay.bahumik#!/?newProfile=&activeTab=0')
 st.markdown(gif_html, unsafe_allow_html=True)

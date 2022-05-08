@@ -469,7 +469,7 @@ with colc:
 #-----------------------------------------------------------------------------------------------------------------------------------------------------
                                                                #ADDING LINKS
 #-----------------------------------------------------------------------------------------------------------------------------------------------------
-gif_html = get_img_with_href('pics/github-32.png', 'https://github.com/s1dewalker/NSE_TRACKER')
+gif_html = get_img_with_href('pics/github-32.png', 'https://github.com/s1dewalker/NSE_Tracker_App')
 st.markdown(gif_html, unsafe_allow_html=True)
 st.markdown("")
 gif_html = get_img_with_href('pics/linkedin-32.png', 'http://www.linkedin.com/in/sujay-bhaumik-d12')

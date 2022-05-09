@@ -245,7 +245,7 @@ start0 = pd.to_datetime('2022-01-01')
 end0 = pd.to_datetime('today')
 index1_list0 = yf.download(ticker0, start0, end0)['Adj Close']
 # to get the latest value
-last_element = index1_list0[-1]
+last_element = round(index1_list0[-1],2)
 
 st.markdown('#### **NIFTY 50**: <span class="font1">{}</span>'.format(last_element), unsafe_allow_html=True)
 

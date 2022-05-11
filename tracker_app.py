@@ -97,9 +97,8 @@ def stocks(index):
 #-----------------------------------------------------------------------------------------------------------------------------------------------------
 indexes = st.selectbox(
      'Select the market index for latest data: ',
-     ('NIFTY 50', 'NIFTY NEXT 50', 'NIFTY 100','NIFTY 200','NIFTY 500', 'NIFTY MIDCAP 50','NIFTY MIDCAP 100','NIFTY MIDCAP 150',
-     'NIFTY SMALLCAP 50', 'NIFTY SMALLCAP 100','NIFTY SMALLCAP 250', 'NIFTY BANK',
-     'NIFTY AUTO', 'NIFTY FMCG', 'NIFTY IT', 'NIFTY ENERGY', 'NIFTY PHARMA', 'NIFTY PSU BANK', 'NIFTY PVT BANK'))
+     ('NIFTY 50', 'NIFTY NEXT 50', 'NIFTY 100','NIFTY 200','NIFTY 500', 'NIFTY MIDCAP 50','NIFTY MIDCAP 100','NIFTY MIDCAP 150', 'NIFTY BANK',
+     'NIFTY AUTO', 'NIFTY FMCG', 'NIFTY IT', 'NIFTY ENERGY', 'NIFTY PSU BANK', 'NIFTY PVT BANK'))
 
 df=stocks(indexes) #Python calls the function but doesn't save the result in any variable. That is why you got the error.
 

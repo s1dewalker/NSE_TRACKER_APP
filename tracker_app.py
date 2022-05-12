@@ -274,10 +274,7 @@ with col4:
         c1=alt.Chart(index1_df).mark_line().encode(
         x=('time'),
         y=alt.Y('Adj Close',scale=alt.Scale(domain=[7000, 19500]))
-        ).properties(
-            width=1370,
-            height=500
-        ).configure_axis(
+        ).configure_axis(   
             grid=False)
         st.altair_chart(c1)
 
@@ -286,9 +283,6 @@ with col4:
         c1=alt.Chart(index1_df).mark_line().encode(
         x=('time'),
         y=alt.Y('Adj Close',scale=alt.Scale(domain=[14000, 19500]))
-        ).properties(
-            width=1370,
-            height=500
         ).configure_axis(
             grid=False)
         st.altair_chart(c1)

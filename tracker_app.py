@@ -275,7 +275,7 @@ with col4:
         x=('time'),
         y=alt.Y('Adj Close',scale=alt.Scale(domain=[7000, 19500]))
         ).properties(
-            width=700,
+            width=620,
             height=300
         ).configure_axis(   
             grid=False)
@@ -287,7 +287,7 @@ with col4:
         x=('time'),
         y=alt.Y('Adj Close',scale=alt.Scale(domain=[14000, 19500]))
         ).properties(
-            width=700,
+            width=620,
             height=300
         ).configure_axis(
             grid=False)
@@ -327,7 +327,7 @@ with col5:
         x=('time'),
         y=alt.Y('Adj Close',scale=alt.Scale(domain=[14000, 42500]))
         ).properties(
-            width=700,
+            width=620,
             height=300
         ).configure_axis(
             grid=False)
@@ -339,7 +339,7 @@ with col5:
         x=('time'),
         y=alt.Y('Adj Close',scale=alt.Scale(domain=[32000, 42500]))
         ).properties(
-            width=700,
+            width=620,
             height=300
         ).configure_axis(
             grid=False)

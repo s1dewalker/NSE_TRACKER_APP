@@ -239,106 +239,111 @@ st.write("""
 """)
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------NIFTY 50
-ticker0 = ('^NSEI')
-start0 = pd.to_datetime('2022-01-01')
-end0 = pd.to_datetime('today')
-index1_list0 = yf.download(ticker0, start0, end0)['Adj Close']
-# to get the latest value
-last_element = round(index1_list0[-1],2)
+col4, col5 = st.columns(2)
 
-st.markdown('#### **NIFTY 50**: <span class="font1">{}</span>'.format(last_element), unsafe_allow_html=True)
+with col4:
+    ticker0 = ('^NSEI')
+    start0 = pd.to_datetime('2022-01-01')
+    end0 = pd.to_datetime('today')
+    index1_list0 = yf.download(ticker0, start0, end0)['Adj Close']
+    # to get the latest value
+    last_element = round(index1_list0[-1],2)
 
-ticker1 = ('^NSEI')
+    st.markdown('#### **NIFTY 50**: <span class="font1">{}</span>'.format(last_element), unsafe_allow_html=True)
 
-start = st.date_input('Start for Nifty 50', value = pd.to_datetime('2022-01-01'), min_value=pd.to_datetime('2017-01-01'),max_value=pd.to_datetime('2022-01-01'))
-end = pd.to_datetime('today')
-# for calculating %change
-index1_list = yf.download(ticker1, start, end)['Adj Close']
-last_element = index1_list[-1]
-first_element = index1_list[0]
-pchg=round(((last_element-first_element)/first_element)*100,2)
+    ticker1 = ('^NSEI')
 
-st.markdown('**NIFTY 50** has since changed by <span class="font2">{}%</span>'.format(pchg), unsafe_allow_html=True)
+    start = st.date_input('Start for Nifty 50', value = pd.to_datetime('2022-01-01'), min_value=pd.to_datetime('2017-01-01'),max_value=pd.to_datetime('2022-01-01'))
+    end = pd.to_datetime('today')
+    # for calculating %change
+    index1_list = yf.download(ticker1, start, end)['Adj Close']
+    last_element = index1_list[-1]
+    first_element = index1_list[0]
+    pchg=round(((last_element-first_element)/first_element)*100,2)
+
+    st.markdown('**NIFTY 50** has since changed by <span class="font2">{}%</span>'.format(pchg), unsafe_allow_html=True)
 
 
-#st.write(index1_list)
-index1_df = pd.DataFrame(index1_list)
-index1_df['time']=index1_df.index
+    #st.write(index1_list)
+    index1_df = pd.DataFrame(index1_list)
+    index1_df['time']=index1_df.index
 
-# displaying in 2 different configurations based on the time and price changes
-if start<pd.to_datetime('2022-01-01'):
-    #https://altair-viz.github.io/user_guide/data.html
-    c1=alt.Chart(index1_df).mark_line().encode(
-    x=('time'),
-    y=alt.Y('Adj Close',scale=alt.Scale(domain=[7000, 19500]))
-    ).properties(
-        width=1370,
-        height=500
-    ).configure_axis(
-        grid=False)
-    st.altair_chart(c1)
+    # displaying in 2 different configurations based on the time and price changes
+    if start<pd.to_datetime('2022-01-01'):
+        #https://altair-viz.github.io/user_guide/data.html
+        c1=alt.Chart(index1_df).mark_line().encode(
+        x=('time'),
+        y=alt.Y('Adj Close',scale=alt.Scale(domain=[7000, 19500]))
+        ).properties(
+            width=1370,
+            height=500
+        ).configure_axis(
+            grid=False)
+        st.altair_chart(c1)
 
-else:
-    #https://altair-viz.github.io/user_guide/data.html
-    c1=alt.Chart(index1_df).mark_line().encode(
-    x=('time'),
-    y=alt.Y('Adj Close',scale=alt.Scale(domain=[14000, 19500]))
-    ).properties(
-        width=1370,
-        height=500
-    ).configure_axis(
-        grid=False)
-    st.altair_chart(c1)
+    else:
+        #https://altair-viz.github.io/user_guide/data.html
+        c1=alt.Chart(index1_df).mark_line().encode(
+        x=('time'),
+        y=alt.Y('Adj Close',scale=alt.Scale(domain=[14000, 19500]))
+        ).properties(
+            width=1370,
+            height=500
+        ).configure_axis(
+            grid=False)
+        st.altair_chart(c1)
+
 #-----------------------------------------------------------------------------------------------------------------------------------------------------NIFTY BANK
-ticker00 = ('^NSEBANK')
-start00 = pd.to_datetime('2022-01-01')
-end00 = pd.to_datetime('today')
-index1_list00 = yf.download(ticker00, start00, end0)['Adj Close']
-last_element = round(index1_list00[-1],2)
+with col5:
+    ticker00 = ('^NSEBANK')
+    start00 = pd.to_datetime('2022-01-01')
+    end00 = pd.to_datetime('today')
+    index1_list00 = yf.download(ticker00, start00, end0)['Adj Close']
+    last_element = round(index1_list00[-1],2)
 
 
-st.markdown('#### **NIFTY BANK**: <span class="font1">{}</span>'.format(last_element), unsafe_allow_html=True)
+    st.markdown('#### **NIFTY BANK**: <span class="font1">{}</span>'.format(last_element), unsafe_allow_html=True)
 
-ticker_bn = ('^NSEBANK')
+    ticker_bn = ('^NSEBANK')
 
-start_bn = st.date_input('Start for Bank Nifty', value = pd.to_datetime('2022-01-01'), min_value=pd.to_datetime('2017-01-01'),max_value=pd.to_datetime('2022-01-01'))
-end = pd.to_datetime('today')
+    start_bn = st.date_input('Start for Bank Nifty', value = pd.to_datetime('2022-01-01'), min_value=pd.to_datetime('2017-01-01'),max_value=pd.to_datetime('2022-01-01'))
+    end = pd.to_datetime('today')
 
-index1_list = yf.download(ticker_bn, start_bn, end)['Adj Close']
-last_element = index1_list[-1]
-first_element = index1_list[0]
-pchg=round(((last_element-first_element)/first_element)*100,2)
+    index1_list = yf.download(ticker_bn, start_bn, end)['Adj Close']
+    last_element = index1_list[-1]
+    first_element = index1_list[0]
+    pchg=round(((last_element-first_element)/first_element)*100,2)
 
-st.markdown('**NIFTY BANK** has since changed by <span class="font2">{}%</span>'.format(pchg), unsafe_allow_html=True)
+    st.markdown('**NIFTY BANK** has since changed by <span class="font2">{}%</span>'.format(pchg), unsafe_allow_html=True)
 
 
-#st.write(index1_list)
-index1_df = pd.DataFrame(index1_list)
-index1_df['time']=index1_df.index
-#st.dataframe(index1_df)
-if start_bn<pd.to_datetime('2022-01-01'):
-    #https://altair-viz.github.io/user_guide/data.html
-    c1=alt.Chart(index1_df).mark_line().encode(
-    x=('time'),
-    y=alt.Y('Adj Close',scale=alt.Scale(domain=[14000, 42500]))
-    ).properties(
-        width=1370,
-        height=500
-    ).configure_axis(
-        grid=False)
-    st.altair_chart(c1)
+    #st.write(index1_list)
+    index1_df = pd.DataFrame(index1_list)
+    index1_df['time']=index1_df.index
+    #st.dataframe(index1_df)
+    if start_bn<pd.to_datetime('2022-01-01'):
+        #https://altair-viz.github.io/user_guide/data.html
+        c1=alt.Chart(index1_df).mark_line().encode(
+        x=('time'),
+        y=alt.Y('Adj Close',scale=alt.Scale(domain=[14000, 42500]))
+        ).properties(
+            width=1370,
+            height=500
+        ).configure_axis(
+            grid=False)
+        st.altair_chart(c1)
 
-else:
-    #https://altair-viz.github.io/user_guide/data.html
-    c1=alt.Chart(index1_df).mark_line().encode(
-    x=('time'),
-    y=alt.Y('Adj Close',scale=alt.Scale(domain=[32000, 42500]))
-    ).properties(
-        width=1370,
-        height=500
-    ).configure_axis(
-        grid=False)
-    st.altair_chart(c1)
+    else:
+        #https://altair-viz.github.io/user_guide/data.html
+        c1=alt.Chart(index1_df).mark_line().encode(
+        x=('time'),
+        y=alt.Y('Adj Close',scale=alt.Scale(domain=[32000, 42500]))
+        ).properties(
+            width=1370,
+            height=500
+        ).configure_axis(
+            grid=False)
+        st.altair_chart(c1)
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------
                                                                #SECTION BREAK USING IMAGES

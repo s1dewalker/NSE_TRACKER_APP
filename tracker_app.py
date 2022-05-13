@@ -455,6 +455,7 @@ df1=dfda[0]
 df1.columns = ['Indicators', 'Last', 'Previous', 'Units', 'Latest Update']
 df1=df1.astype({"Last": float, "Previous": float})
 df1=df1.round({'Last':2,'Previous':2})
+df1 = df1.set_index('Indicators')
 st.table(df1.style.format({'Last': '{:.2f}', 'Previous': '{:.2f}'}))
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------

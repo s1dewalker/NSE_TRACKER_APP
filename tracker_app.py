@@ -183,23 +183,21 @@ with col1:
     st.write("""
     > Companies that are __leaders__ in their respective sectors with no or very few competitors. Companies that provide __essential/necessary__ products and services.
     TOO BIG TO FAIL \n
-    "Monopoly is the condition of every successful business" - Peter Thiel
     """)
-    
 
 with col2:
-    gif_html = get_img_with_href('pics/hdy.png', 'https://docs.google.com/spreadsheets/d/12c9C5D5PXhEV6yxhYwkwMu7-h_B9q5-lpKKP_Rb4htU/edit?usp=sharing')
-    st.markdown(gif_html, unsafe_allow_html=True)
-    st.write("""
-    > Stocks that have been __consistently__ paying out dividend.
-    """)
-
-with col3:
     gif_html = get_img_with_href('pics/vs.png', 'https://docs.google.com/spreadsheets/d/1Gb-1oktSWFO3j89dE2JD0OrNyecNonicAqzgTt2WZTA/edit?usp=sharing')
     st.markdown(gif_html, unsafe_allow_html=True)
     st.write("""
     > Stocks that have __high ROA, low debt__ and __good EPS.__
     "Price is what you pay. Value is what you get" - Benjamin Graham
+    """)
+
+with col3:
+    gif_html = get_img_with_href('pics/hdy.png', 'https://docs.google.com/spreadsheets/d/12c9C5D5PXhEV6yxhYwkwMu7-h_B9q5-lpKKP_Rb4htU/edit?usp=sharing')
+    st.markdown(gif_html, unsafe_allow_html=True)
+    st.write("""
+    > Stocks that have been __consistently__ paying out dividend.
     """)
 st.write("""(with GOOGLE FINANCE API in Sheets)""")
 #-----------------------------------------------------------------------------------------------------------------------------------------------------

@@ -6,3 +6,4 @@ lxml==4.6.3
 pillow
 streamlit-aggrid
 yfinance==0.1.70
+beautifulsoup4==4.9.0

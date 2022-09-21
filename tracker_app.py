@@ -12,7 +12,7 @@ import os
 #import streamlit_theme as stt
 #import streamlit.components.v1 as components
 import urllib.request
-from bs4 import beautifulsoup4
+from bs4 import BeautifulSoup
 import yfinance as yf
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------

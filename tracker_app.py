@@ -443,7 +443,7 @@ with col4:
 #-----------------------------------------------------------------------------------------------------------------------------------------------------
 #INDICATORS: 3) ECONOMIC INDICATORS: WEB SCRAPED DATA OF INDIAN ECONOMY
 #-----------------------------------------------------------------------------------------------------------------------------------------------------
-except urllib.error.URLError as e: ResponseData = e.read().decode("utf8", 'ignore')
+
 st.markdown("""
 * Economic Indicators
 """)

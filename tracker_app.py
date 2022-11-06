@@ -444,29 +444,8 @@ with col4:
 #INDICATORS: 3) ECONOMIC INDICATORS: WEB SCRAPED DATA OF INDIAN ECONOMY
 #-----------------------------------------------------------------------------------------------------------------------------------------------------
 
-st.markdown("""
-* Economic Indicators
-""")
 
-url2="https://tradingeconomics.com/india/indicators"
-dfda = pd.read_html(url2)
-df1=dfda[0]
-df1.columns = ['Indicators', 'Last', 'Previous', 'Units', 'Latest Update']
-df1=df1.astype({"Last": float, "Previous": float})
-df1=df1.round({'Last':2,'Previous':2})
 
-# CSS to inject contained in a string
-hide_table_row_index = """
-            <style>
-            tbody th {display:none}
-            .blank {display:none}
-            </style>
-            """
-
-# Inject CSS with Markdown
-st.markdown(hide_table_row_index, unsafe_allow_html=True)
-
-st.table(df1.style.format({'Last': '{:.2f}', 'Previous': '{:.2f}'}))
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------
                                                                #SECTION BREAK USING IMAGES

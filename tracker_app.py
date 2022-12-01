@@ -323,7 +323,7 @@ with col5:
         #https://altair-viz.github.io/user_guide/data.html
         c1=alt.Chart(index1_df).mark_line().encode(
         x=('time'),
-        y=alt.Y('Adj Close',scale=alt.Scale(domain=[14000, 42500]))
+        y=alt.Y('Adj Close',scale=alt.Scale(domain=[14000, 44000]))
         ).properties(
             width=620,
             height=300
@@ -335,7 +335,7 @@ with col5:
         #https://altair-viz.github.io/user_guide/data.html
         c1=alt.Chart(index1_df).mark_line().encode(
         x=('time'),
-        y=alt.Y('Adj Close',scale=alt.Scale(domain=[32000, 42500]))
+        y=alt.Y('Adj Close',scale=alt.Scale(domain=[32000, 44000]))
         ).properties(
             width=620,
             height=300
